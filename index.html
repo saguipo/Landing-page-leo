@@ -1,112 +1,258 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Como sustituir medicamentos por alimentos</title>
-    <link rel="stylesheet" href="navbar.css">
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="style.scss">
+<link rel="styleshoot" href="registro.css">
+<script src="./world.js"></script>
+<head>
+<!--
+<li class="logo"><a href="#">NOMBRE AQUI<img src="ESCUDO.jpg" class="barco"></a></li>
+-->
+<title class="centroTitulo">NOTIFICACIONES Y AVISOS</title>
+
+<!-- EARTH ANIMATION DOWN HERE -->
+
+<link rel="stylesheet" href="registro.css">
+
+    <div class="earth"></div>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("space.jpg");
+        
+}
+.earth{
+
+    
+height: 300px;
+    width: 300px;
+    background: url(earth.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 0 0 20px rgba(0,0,0,1),
+                        0 0 50px #08f; 
+    position: relative;
+    animation: earth 15s linear infinite;
+    left:50%; 
+-webkit-transform:translate3d(-50%,0,0);
+
+}
+
+@keyframes earth{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -750px 0;
+    }
+}
+
+
+#particles-js{
+    height: 100%;
+    background: src("#particles-js");
+  }
+</style>
+
+
+<!-- animation finishes HERE -->
+
+
+
+
+<!-- HTML background image startsHERE -->
+
+
+
+<style>
+.fondo {
+    position: relative;
+    z-index: 1;
+}
+#particles-js{
+    height: 100%;
+    background: src("#particles-js");
+  }
+
+.fondo .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(space.jpg) center center;
+    opacity: .1;
+    width: 100%;
+    height: 100%;
+}
+
+<!-- world.scss  down here -->
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Oxygen:300');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url("space.jpg");
+  margin: 0;
+  min-height: 100vh;
+  font-family: Oxygen, sans-serif;
+  color: #fff;
+}
+#marsloc {
+  cursor: grab;
+}
+#marsinfo { 
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 2rem;
+}
+#marsinfo h1 {
+  font-size: 8vw;
+  margin-top: 0;
+  font-weight: 100;
+  line-height: 1;
+  position: absolute;
+}
+#marsinfo div {
+  width: 40%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  right: 0;
+  padding: 1.3rem;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  pointer-events: none;
+  @media all and (max-width: 540px) {
+    width: 100%;
+    left: 0;
+    top: 40vw;
+  }
+}
+
+
+<!-- HTML SLIDE FINISHES HERE -->
+</style>
+
 </head>
 <body>
-  
-    <nav>
+
+<!--       world HTML DOWNL HERE -->
+
+<div id="marsloc"></div>
+<article id="marsinfo">
+</article>
+
+
+<div class="fondo">
+    <div class="bg"></div>
+
+<h1>
+ <center>
+General Information
+</center>
+</h1>
+<p align="right">
+<big><i>Date 01/01/2022</i></big></p>
+<nav>
       <div id="particles-js"> 
         <ul class="menu">
-            <li class="logo"><a href="#">L.A.<img src="ESCUDO.jpg" class="barco"></a></li>
-            <li class="item"><a href="CV_LEO.html">Autor</a></li>
-            <li class="item"><a href="http://bchemical-body-hack.site/blog/">Porfolio</a></li>
-            <li class="item"><a href="https://virtual-tour360.tech/index.php/quiero-leer-el-libro/">Libro</a></li>
-            </li>
-            <li><a href="https://api.whatsapp.com/send?phone=34622523778&text=Ready%20to%20bio%20-%20hack%20your%20body%20back%20to%20metabolic%20balance%3F" class="nav-link">Contacto</a></li>
-            <li class="item button"><a href="#">Log In</a></li>
-            <li class="item button secondary"><a href="#">Sign Up</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-        <div id="error"></div>
-            <form id="form" action="/" method="GET">
-              <div>
-                <label for="name">Nombre</label>
-                <input  id="name" type="text" name="name" required>
-                <label for="password">Password</label>
-                <input  id="password" type="password" name="password" required>
-                </div>
-                <button class="enviar" type="submit">Enviar</button>
-            </form>
-          </div>
-
-          <ul class="MenuNOTICES">
-        <H2 class="ClanNotificacion">Clan Aramburu REGISTROS DE ACCESO PÚBLICO</H2>
-            <li class="item"><a href="https://drive.google.com/drive/folders/1jTtgC4SHAbstXYMv1q15heWosAk89wiY?usp=sharing">NOTIFICACIONES Y AVISOS</a></li>
+        <div>
+        <H1 style="color:blue;font-size:30px; text-align: center;">Clan Aramburu</H1>
+        <Br>
+        <H2 style="color:blue;font-size:30px; text-align: center;"> Registro de Auto-Determinación / Self-Determination registry</H2>
             
+            
+            <li><a href="#idCard">Identificación de Hombre Vivo</a></li>
+                        </div>
+            <li class="item"><a href="CV_LEO.html">Curriculum Vitae</a></li>
+            <li class="item"><a href="https://github.com/saguipo?tab=repositories">Porfolio Programación</a></li>
+            <li class="item"><a href="https://leoaramburu.gumroad.com/l/jtEM?_ga=2.226659165.1349864720.1630396672-1209518202.1629584207">Obras Literarias</a></a></li>
+            </li>
+            
+            
+
+
+    <div class="envioDatos" style="color:blue;font-size:20px; text-align: center;">
+    
+<p> 1ra NOTIFICACIÓN: <br>eEvid ID:  1TWD5572103XT/ Sent on:2021-08-09/  Sender: l.blas.aramburu@gmail.com </p><br>
+
+<p>2da NOTIFICACIÓN: <br> eEvid ID:  1TWD5572103XT/ Sent on: 2021-12-31 / Sender: l.blas.aramburu@gmail.com </p> <br>
+
+<p>3ra NOTIFICACIÓN: <br> eEvid ID:  1VF79JB2105QG / Sent on: 2022-02-05 / Sender: l.blas.aramburu@gmail.com </p>
+
+
+</div>
+
+ <br> <br>
+<div class="envioDatos" style="color:blue; font-size:30px; text-align: center;">
+            <li class="itemClanNotificacion"> <a href="https://drive.google.com/drive/folders/1jTtgC4SHAbstXYMv1q15heWosAk89wiY?usp=sharing"><h1 class="centroTitulo">NOTIFICACIONES Y AVISOS</h1></a></li>
+            
+            <br><br>
+            </div>
         </ul>
     </nav>
     <div id="NOTICES"> 
-      
+      <div>
+      <div class="envioDatos" style="color:blue; font-size:30px; text-align: center;">
+          <h2><p><a href="https://commonlawcourt.com/en/pages/search">Common Law Court Record</a></p></h2>
+          <BR>
+          <H3 id="clcFN">Leonardo del Clan Aramburu:<BR><BR> Fictitious Name record <BR>
+                                             Birth Certificate record
+          </H3>
+          <BR><br>
+          <p>Open the PDF file <a href="<p>Open a PDF file <a href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf">Declaration of Principles of International Law U.N. Page 122</a>.</p>Learn about self-determination in positive law</a>.</p>
+          
+          </div>
+          <div class="envioDatos" style="color:blue; font-size:30px; text-align: center;">
+          
+<img src="CLC FN.png" alt="CLC public record" width="1200" height="700">
+</div>
+</div>
+
+<div>
+<div class="envioDatos" style="color:blue; font-size:30px; text-align: center;">
+<h2>
+<p><a href="https://bio-reset.000webhostapp.com/CV_LEO.html">Estatus Diplomático y habilitado para Comercio internacional</a></p>
+</h2>
+
+          <H3 id="clcFN">Common Law Fictitious Name <BR>
+                    </H3>
+          </div>
+   <div class="envioDatos" style="color:blue; font-size:30px; text-align: center;">       
+<img id="idCard" src="CLC-REML.jpeg" alt="CLC ID" width="800" height="400">
+<img src="CLC-REML-REVERSO.jpeg" alt="CLC ID" width="800" height="400">
+
+<!-- wordl.js DOWN HERE --!
 
 
+<!-- wordl.js FINISHES UP HERE --!
 
-    <main id="background"><br>
-      
-      <div class="title">
-        <br>
-        <h2 class="title"> CLICK sobre el libro y DESCARGA plan paso a paso</h2> <br>
-        <a href="plan.pdf" download class="title">
-  <img src="portada.jpg" alt="portada libro" width="104" height="142" class="descarga">
-</a><br><br>
-<button class="title"><a href="https://books.google.es/books?id=if3eDwAAQBAJ&pg=PA27&dq=otro+antidoto+para+las+enfermedades+cr%C3%B3nicas&hl=es&sa=X&ved=2ahUKEwjwvcqB3u_qAhVGxIUKHf_VBScQ6AEwAHoECAQQAg#v=onepage&q=otro%20antidoto%20para%20las%20enfermedades%20cr%C3%B3nicas&f=false" class="leer">
-  CLICK AQUÍ para leer parte del libro</a></button>
-        <h3 class="title"> cambia medicamentos por alimentos</h3>
-        
-        </div>
-        <br> <br>
-        <div class="book-bg">
-        
-        <div class="book-cover"></div>
-    </div>
-  
-        <!-- calculator body-->
+<script type="text/javascript" src="world.html"></script>
+</div>
+</div>
+</div>
 
-     <br><br><br>
-
-     <div id="calc">
-       
-      
-     <form id="calculatecarbs" action="">
-                 <fieldset id="calculatecarbs">
-     <h1 id="titulocalc">CALCULA TUS CARBOS<h1>
-                   <p>
-             <label for="carbs">Carbohidratos totales (gr)</label>
-                     <input id="carbs" name="carbs" type="number" placeholder="ej: 20"/>
-                   </p>
-                   <p>
-       <label for="fibra">Fibra (gr)</label>
-                     <input id="fibra" name="fibra" type="number" placeholder="ej: 25"/>
-                   </p>
-                   <p>
-                     <input type="submit" value="Calcular carbohidratos netos" />
-
-                     <input type="reset" value="Re-iniciar" />
-                   </p>
-                   <p>
-     <label for="resultado">Carbohidratos Netos (gr)</label>
-                     <input id="resultado" name="resultado"/>
-                   </p>
-                  </fieldset>
-                 </form>
-
-              </div>
-        <!-- END calculator body-->
-        
-    </main>
-    
-    
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
- 
+
+</body>
+</html>
+
+
 </body>
 </html>
